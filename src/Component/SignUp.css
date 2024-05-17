@@ -1,0 +1,107 @@
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+}
+
+.signup-content {
+    display: flex;
+    flex-direction: row;  /* Default direction */
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.signup-image {
+    width: 50%; /* Adjust based on preference for larger screens */
+    text-align: center;
+}
+
+.signup-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.signup-form {
+    width: 50%; /* Adjust based on preference for larger screens */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.form-title, .input-group, .signup-button, .separator, .social-login, .login-link {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.signup-button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-login button {
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.google-btn { background-color: #dd4b39; }
+.facebook-btn { background-color: #3b5998; }
+.twitter-btn { background-color: #1da1f2; }
+
+.login-link {
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #007bff;
+}
+
+/* Adjustments for medium devices */
+@media (max-width: 768px) {
+    .signup-content {
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .signup-image, .signup-form {
+        width: 80%;
+    }
+
+    .signup-image img {
+        height: 200px; /* Fixed height for better control */
+    }
+}
+
+/* Adjustments for small devices */
+@media (max-width: 480px) {
+    .signup-image img {
+        width: 100%;
+        height: 150px; /* Reduce height to fit small screens better */
+    }
+}
